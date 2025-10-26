@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ptaszniki, pająki, pajęczaki, terrarystyka">
+    <title>Boberegg - gatunki ptaszników</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="query.css" type="text/css">
+</head>
+<body>
+
+    <svg width="0" height="0" style="position: absolute; pointer-events: none; opacity: 0;">
+      <defs>
+        <clipPath id="squircleClip" clipPathUnits="objectBoundingBox">
+          <path d="M 0,0.5 C 0,0 0,0 0.5,0 S 1,0 1,0.5 1,1 0.5,1 0,1 0,0.5"></path>
+        </clipPath>
+      </defs>
+    </svg>
+
+    <header class="sticky-header">
+
+        <a href="#intro-section">
+            <div id="logo">
+                <div id="logo-img-div"><img src="img/logo.png" alt="logo"></div>
+                <div id="logo-p-div"><p>BOBEREGG</p></div>
+            </div>
+        </a>
+
+        <nav>
+            <button
+                id="themeToggle"
+                class="theme-switch"
+                role="switch"
+                aria-checked="false"
+                aria-label="Przełącz tryb jasny / ciemny"
+                title="Przełącz tryb jasny / ciemny">
+                <span class="track" aria-hidden="true"></span>
+                <span class="icon sun" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4" fill="currentColor"></circle>
+                        <g stroke="currentColor">
+                            <path d="M12 2v2"></path><path d="M12 20v2"></path>
+                            <path d="M4.93 4.93l1.41 1.41"></path><path d="M17.66 17.66l1.41 1.41"></path>
+                            <path d="M2 12h2"></path><path d="M20 12h2"></path>
+                            <path d="M4.93 19.07l1.41-1.41"></path><path d="M17.66 6.34l1.41-1.41"></path>
+                        </g>
+                    </svg>
+                </span>
+                <span class="icon moon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+                </span>
+                <span class="knob" aria-hidden="true"></span>
+            </button>
+            
+            <label class="hamburger">
+              <input type="checkbox">
+              <svg viewBox="0 0 32 32">
+                <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                <path class="line" d="M7 16 27 16"></path>
+              </svg>
+            </label>
+
+            <ul id="nav-ul">
+                <li><a href="#intro-section">STRONA GŁÓWNA</a></li>
+                <li><a href="#low-venom">SŁABY JAD</a></li>
+                <li><a href="#medium-venom">ŚREDNI JAD</a></li>
+                <li><a href="#high-venom">MOCNY JAD</a></li>
+                <li><a href="#socials-section">MEDIA</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        
+        <section id="intro-section">
+            <div class="intro-image-wrapper">
+                <img id="intro-image-desktop" src="img/ptasznik.jpeg" alt="zdjęcie ptasznika">
+            </div>
+            
+            <div id="intro-content">
+                <h1>PTASZNIKI</h1>
+                <h4>POZNAJ ŚWIAT PTASZNIKÓW</h4>
+
+                <section id="quick-links-container">
+                    
+                    <a href="#low-venom">
+                        <section class="quick-link-box venom-low">
+                            <div class="quick-link-icon">
+                                <p>SŁABO JADOWITE</p> 
+                            </div>
+                            <div class="quick-link-description">
+                                <p>Gatunki polecane dla początkujących, o łagodnym usposobieniu i słabym jadzie.</p>
+                            </div>
+                        </section>
+                    </a>
+                    
+                    <a href="#medium-venom">
+                        <section class="quick-link-box venom-medium">
+                            <div class="quick-link-icon">
+                                <p>UMIARKOWANIE JADOWITE</p>
+                            </div>
+                            <div class="quick-link-description">
+                                <p>Gatunki dla osób z doświadczeniem. Szybsze i z jadem o średniej sile.</p>
+                            </div>
+                        </section>
+                    </a>
+
+                    <a href="#high-venom">
+                        <section class="quick-link-box venom-high">
+                            <div class="quick-link-icon">
+                                <img src="img/skull_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg"> 
+                                <p>MOCNO JADOWITE</p>
+                            </div>
+                            <div class="quick-link-description">
+                                <p>Gatunki wyłącznie dla ekspertów. Bardzo szybkie, z potencjalnie silnym jadem.</p>
+                            </div>
+                        </section>
+                    </a>
+
+                </section> 
+            </div> 
+        </section> 
+        
+        <section id="species-info-section">
+            <h2>Opisy Gatunków</h2>
+            
+            <section id="low-venom" class="species-category-group">
+                <h3>Słabo Jadowite</h3>
+                
+                <a href="species/b-hamorii.html" class="species-card-link">
+                    <article class="species-profile-card venom-low">
+                        <img src="img/b-hamorii.png" alt="Brachypelma hamorii">
+                        <div class="species-profile-text">
+                            <h3>Brachypelma hamorii</h3>
+                            <p>Jeden z najbardziej rozpoznawalnych ptaszników, ceniony za piękne ubarwienie i łagodny temperament.</p>
+                        </div>
+                    </article>
+                </a>
+                
+                <a href="species/a-geniculata.html" class="species-card-link">
+                    <article class="species-profile-card venom-low">
+                        <img src="img/a-geniculata.jpg" alt="Acanthoscurria geniculata">
+                        <div class="species-profile-text">
+                            <h3>Acanthoscurria geniculata</h3>
+                            <p>Duży i efektowny ptasznik naziemny, żarłoczny i szybko rosnący.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="species/l-parahybana.html" class="species-card-link">
+                    <article class="species-profile-card venom-low">
+                        <img src="img/l-parachybana.jpg" alt="Lasiodora parahybana">
+                        <div class="species-profile-text">
+                            <h3>Lasiodora parahybana</h3>
+                            <p>Jeden z największych ptaszników na świecie. Osiąga imponujące rozmiary.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="species/n-incei.html" class="species-card-link">
+                    <article class="species-profile-card venom-low">
+                        <img src="img/n-incei.jpg" alt="Neoholothele incei"> 
+                        <div class="species-profile-text">
+                            <h3>Neoholothele incei</h3>
+                            <p>Mały, ale bardzo ciekawie ubarwiony ptasznik, znany z tworzenia gęstych sieci.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="species/g-pulchripes.html" class="species-card-link">
+                    <article class="species-profile-card venom-low">
+                         <img src="img/g-pulchripes.jpg" alt="Grammostola pulchripes">
+                        <div class="species-profile-text">
+                            <h3>Grammostola pulchripes</h3>
+                            <p>Duży, naziemny ptasznik o spokojnym usposobieniu, znany ze złotych wzorów na odnóżach.</p>
+                        </div>
+                    </article>
+                </a>
+                
+                <a href="species/t-albopilosus-nicaragua.html" class="species-card-link">
+                    <article class="species-profile-card venom-low">
+                        <img src="img/t-albopilosus.jpg" alt="Tliltocatl albopilosus Nicaragua">
+                        <div class="species-profile-text">
+                            <h3>Tliltocatl albopilosus "Nicaragua"</h3>
+                            <p>Bardzo spokojny gatunek, idealny na pierwszego ptasznika, odmiana z dłuższymi włoskami.</p>
+                        </div>
+                    </article>
+                </a>
+            </section> 
+
+            <section id="medium-venom" class="species-category-group">
+                <h3>Umiarkowanie Jadowite</h3>
+
+                <a href="species/c-cyaneopubescens.html" class="species-card-link">
+                    <article class="species-profile-card venom-medium">
+                        <img src="img/chromatopelma.jpg" alt="Chromatopelma cyaneopubescens">
+                        <div class="species-profile-text">
+                            <h3>Chromatopelma cyaneopubescens</h3>
+                            <p>Niesamowicie ubarwiony ptasznik z metalicznie niebieskimi nogami i pomarańczowym odwłokiem.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="species/p-irminia.html" class="species-card-link">
+                    <article class="species-profile-card venom-medium">
+                        <img src="img/p-irminia.jpg" alt="Psalmopoeus irminia">
+                        <div class="species-profile-text">
+                            <h3>Psalmopoeus irminia</h3>
+                            <p>Nadrzewny ptasznik o aksamitno-czarnym ubarwieniu z jaskrawymi wzorami.</p>
+                        </div>
+                    </article>
+                </a>
+                
+                <a href="species/p-cambridgei.html" class="species-card-link">
+                    <article class="species-profile-card venom-medium">
+                        <img src="img/p-cambridgei.jpg" alt="Psalmopoeus cambridgei">
+                        <div class="species-profile-text">
+                            <h3>Psalmopoeus cambridgei</h3>
+                            <p>Duży ptasznik nadrzewny, bardzo szybki i defensywny.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="species/t-violaceus.html" class="species-card-link">
+                    <article class="species-profile-card venom-medium">
+                        <img src="img/t-violaceus.jpg" alt="Tapinauchenius violaceus">
+                        <div class="species-profile-text">
+                            <h3>Tapinauchenius violaceus</h3>
+                            <p>Pięknie ubarwiony na fioletowo ptasznik nadrzewny, znany z dużej szybkości.</p>
+                        </div>
+                    </article>
+                </a>
+
+                 <a href="species/h-pulchripes.html" class="species-card-link">
+                    <article class="species-profile-card venom-medium">
+                        <img src="img/h-pulchripes.jpg" alt="Harpactira pulchripes">
+                        <div class="species-profile-text">
+                            <h3>Harpactira pulchripes</h3>
+                            <p>Afrykański ptasznik podziemny o niesamowitym złotym karapaksie i niebieskich nogach.</p>
+                        </div>
+                    </article>
+                </a>
+            </section> 
+            
+            <section id="high-venom" class="species-category-group">
+                <h3>Mocno Jadowite</h3>
+
+                <a href="species/p-rufilata.html" class="species-card-link">
+                    <article class="species-profile-card venom-high">
+                         <img src="img/p-rufilata.jpg" alt="Poecilotheria rufilata">
+                        <div class="species-profile-text">
+                            <h3>Poecilotheria rufilata</h3>
+                            <p>Jeden z największych ptaszników nadrzewnych, posiada silny jad i jest bardzo szybki.</p>
+                        </div>
+                    </article>
+                </a>
+                
+                <a href="species/p-metallica.html" class="species-card-link">
+                    <article class="species-profile-card venom-high">
+                        <img src="img/p-metallica.jpg" alt="Poecilotheria metallica">
+                        <div class="species-profile-text">
+                            <h3>Poecilotheria metallica</h3>
+                            <p>Zachwycający, metalicznie niebieski ptasznik nadrzewny. Bardzo szybki, z silnym jadem.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="species/h-maculata.html" class="species-card-link">
+                    <article class="species-profile-card venom-high">
+                        <img src="img/h-maculata.jpg" alt="Heteroscodra maculata">
+                        <div class="species-profile-text">
+                            <h3>Heteroscodra maculata</h3>
+                            <p>Bardzo szybki i terytorialny ptasznik z Afryki o efektownym ubarwieniu.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="species/p-murinus.html" class="species-card-link">
+                    <article class="species-profile-card venom-high">
+                        <img src="img/p-murinus.jpg" alt="Pterinochilus murinus">
+                        <div class="species-profile-text">
+                            <h3>Pterinochilus murinus (OBT)</h3>
+                            <p>Znany ze swojej defensywnej postawy i bardzo silnego jadu. Wyłącznie dla ekspertów.</p>
+                        </div>
+                    </article>
+                </a>
+                
+                <a href="species/c-darlingi.html" class="species-card-link">
+                    <article class="species-profile-card venom-high">
+                         <img src="img/c-darlingi.jpg" alt="Ceratogyrus darlingi">
+                        <div class="species-profile-text">
+                            <h3>Ceratogyrus darlingi</h3>
+                            <p>Afrykański ptasznik znany z charakterystycznego "rogu" na karapaksie. Posiada silny jad.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="species/s-calceatum.html" class="species-card-link">
+                    <article class="species-profile-card venom-high">
+                        <img src="img/s-calceatum.jpg" alt="Stromatopelma calceatum">
+                        <div class="species-profile-text">
+                            <h3>Stromatopelma calceatum</h3>
+                            <p>Niezwykle szybki i agresywny ptasznik nadrzewny z Afryki. Posiada bardzo silny jad.</p>
+                        </div>
+                    </article>
+                </a>
+
+            </section>
+        </section>
+    </main>
+    
+    <footer id="socials-section">
+        <h2>MEDIA SPOŁECZNOŚCIOWE</h2>
+        
+        <div class="social-links-container">
+            
+            <a href="https://github.com/Bobereg" target="_blank" class="social-icon-link social-github">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+                </svg>
+            </a>
+
+            <a href="https://www.instagram.com/boberegg?igsh=NmFva2dtcmxzNHU2" target="_blank" class="social-icon-link social-instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.148 3.227-1.667 4.771-4.919 4.919-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.07-1.646-.07-4.85s.012-3.584.07-4.85c.148-3.227 1.667-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163m0-1.44C8.718.723 8.343.734 7.053.79c-3.552.16-5.833 2.45-5.993 5.993C1.002 8.05 1 8.424 1 12s0 3.95.06 5.207c.16 3.543 2.44 5.833 5.993 5.993C8.343 23.266 8.718 23.277 12 23.277s3.657-.01 4.947-.067c3.552-.16 5.833-2.45 5.993-5.993C22.998 15.95 23 15.576 23 12s0-3.95-.06-5.207C22.78 3.243 20.5 1.023 16.947.86 15.657.802 15.282.79 12 .79v.001z"></path>
+                   <path d="M12 6.848c-2.841 0-5.152 2.311-5.152 5.152s2.311 5.152 5.152 5.152 5.152-2.311 5.152-5.152-2.311-5.152-5.152-5.152zm0 8.865c-2.049 0-3.713-1.664-3.713-3.713s1.664-3.713 3.713-3.713 3.713 1.664 3.713 3.713-1.664 3.713-3.713 3.713z"></path>
+                   <circle cx="16.948" cy="7.052" r="1.219"></circle>
+                </svg>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCMvJdO6MM5p_JwBBERGrcVg" target="_blank" class="social-icon-link social-youtube">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+                </svg>
+            </a>
+
+            <a href="https://www.tiktok.com/@bober_animal" target="_blank" class="social-icon-link social-tiktok">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M12.53.02C13.84.01 15.14 0 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.1-.1 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.06-5.36.01-4.03-.01-8.05.02-12.07z"></path>
+                </svg>
+            </a>
+        </div>
+        
+    <div class="footer-text">
+        <p>2025 Mateusz Kajura — autor strony.</p>
+        <p>Kontakt: <a href="mailto:mateuszkajura@gmail.com">mateuszkajura@gmail.com</a></p>
+        <br>
+        <p>
+            Serdeczne podziękowania dla
+            <a href="https://www.terrarium.com.pl" target="_blank">Terrarium.pl</a>,
+            <a href="https://arent.pl" target="_blank">Arent.pl</a> oraz
+            <a href="https://www.istockphoto.com/pl" target="_blank">iStockphoto</a>
+            za zdjęcia ptaszników, bez których strona by nie powstała.
+        </p>
+    </div>
+
+
+    </footer>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>

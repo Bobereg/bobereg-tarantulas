@@ -1,0 +1,314 @@
+/* ==================================================
+   MEDIA QUERIES (Style responsywne)
+   ==================================================
+*/
+
+/* --- Duże tablety / laptopy (831px - 1440px) --- */
+@media screen and (min-width: 831px) and (max-width: 1440px) 
+{
+    /* --- Nawigacja mobilna --- */
+    #nav-ul {
+        display: none;
+    }
+
+    #nav-ul.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px; 
+        right: 0;
+        width: 100%;
+        background-color: var(--header-bg); 
+        padding: 20px 0;
+        align-items: center;
+        gap: 20px;
+        z-index: 99;
+        border-top: 1px solid var(--border-color); 
+    }
+
+    .hamburger {
+        display: block; 
+    }
+
+    #intro-section {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .intro-image-wrapper {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    #intro-image-desktop {
+        display: block;
+        width: 100%; 
+        max-width: 700px; 
+        margin: 0 auto; 
+        height: auto;
+        mask-image: none; 
+    }
+
+    :root[data-theme="dark"] #intro-image-desktop {
+        mask-image: linear-gradient(to top, transparent 0%, black 25%), 
+                    linear-gradient(to left, transparent 5%, black 30%),
+                    linear-gradient(to right, transparent 5%, black 30%);
+        mask-composite: intersect;
+    }
+
+    #intro-content {
+        align-items: center; 
+        padding: 20px 40px; 
+        width: 100%; 
+    }
+
+    #intro-content h1 {
+        margin-top: 40px; 
+        text-align: center; 
+    }
+    
+    #intro-content h4 {
+        text-align: center;
+    }
+
+    #quick-links-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+
+    .quick-link-box {
+        width: 300px; 
+    }
+}
+
+
+/* --- Tablety i Telefony (wszystko poniżej 830px) --- */
+@media screen and (max-width: 830px)
+{
+    /* --- Nawigacja mobilna --- */
+    #nav-ul {
+        display: none;
+    }
+
+    #nav-ul.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px; 
+        right: 0;
+        width: 100%;
+        background-color: var(--header-bg); 
+        padding: 20px 0;
+        align-items: center;
+        gap: 20px;
+        z-index: 99;
+        border-top: 1px solid var(--border-color); 
+    }
+    
+    #nav-ul li a {
+        color: var(--text); 
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* --- Intro na mobilce --- */
+    #intro-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-image-wrapper {
+        width: 100%;
+        max-width: 700px;
+    }
+    
+    #intro-content {
+        align-items: center;
+        padding: 20px;
+    }
+
+    #intro-content h1 {
+        margin-top: 40px;
+        font-size: 70px;
+        text-align: center;
+    }
+
+    #intro-content h4 {
+        text-align: center;
+    }
+
+    #intro-image-desktop {
+        display: block;
+        width: 100%; 
+        max-width: 700px; 
+        margin: 0 auto; 
+        height: auto;
+        mask-image: none;
+    }
+    
+    :root[data-theme="dark"] #intro-image-desktop {
+        mask-image: linear-gradient(to top, transparent 0%, black 25%), 
+                    linear-gradient(to left, transparent 5%, black 30%),
+                    linear-gradient(to right, transparent 5%, black 30%);
+        mask-composite: intersect;
+    }
+
+
+    /* --- Boxy na mobilce --- */
+    #quick-links-container {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%; 
+        margin-top: 40px;
+    }
+
+    .quick-link-box {
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    /* --- Karty gatunków na mobilce --- */
+    .species-profile-card {
+        flex-direction: column; 
+        width: 90%;
+        max-width: 500px; 
+    }
+    
+    .species-profile-card img {
+        width: 100%; 
+        height: 250px;
+    }
+
+    #species-info-section {
+        padding: 40px 20px;
+    }
+
+    .species-category-group h3 {
+        font-size: 30px;
+        width: 100%;
+    }
+    
+    /* Style responsywne dla stron gatunków */
+    .species-detail-container {
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+
+    .detail-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .detail-header-img {
+        max-width: 100%;
+        height: 250px;
+    }
+    
+    .detail-header-title h1 {
+        font-size: 50px;
+    }
+    .detail-header-title h2 {
+        font-size: 22px;
+    }
+
+    .detail-main-content {
+         flex-direction: column; /* Ustawienie elementów (mapa, info) pionowo */
+    }
+}
+
+
+/* --- Tylko telefony (poniżej 500px) --- */
+@media screen and (max-width: 500px)
+{
+    #logo {
+        margin-left: 15px;
+        width: auto; 
+    }
+    
+    #logo-img-div img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #logo-p-div p {
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+    
+    #logo-p-div p:hover {
+        letter-spacing: 4px;
+    }
+
+    nav {
+        margin-right: 15px;
+        gap: 10px; 
+    }
+    
+    .theme-switch { 
+        --switch-w: 56px; 
+        --switch-h: 32px; 
+        --knob-size: 24px; 
+    }
+
+    #intro-content h1 {
+        font-size: 48px;
+        letter-spacing: 3px;
+    }
+    
+    #intro-content h4 {
+        font-size: 18px;
+    }
+    
+    .quick-link-box {
+        width: 95%;
+    }
+    
+    #species-info-section {
+        padding: 30px 10px;
+    }
+    
+    #species-info-section h2 {
+        font-size: 40px;
+    }
+    
+    .species-category-group h3 {
+        font-size: 28px;
+    }
+
+    .species-profile-card {
+        width: 100%; 
+        padding: 15px;
+    }
+
+    .species-profile-card img {
+        height: 200px; 
+    }
+    
+    /* Dalsze zmniejszenie czcionek na podstronach */
+    .detail-header-title h1 {
+        font-size: 42px;
+    }
+    .detail-header-title h2 {
+        font-size: 20px;
+    }
+    
+    .info-box h3 {
+        font-size: 24px;
+    }
+    
+    .detail-care-info ul li {
+        font-size: 16px;
+    }
+    
+    .detail-description p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
